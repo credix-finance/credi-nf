@@ -18,7 +18,6 @@ def generate_unique_id():
 
 
 def replace_names(root):
-    # Replace company and person names with fake ones
     fake_names = {
         "FREXCO": "FAKECO",
         "FREXCO COMERCIO E DISTRIBUICAO DE  ALIME": "FAKECO COMERCIO E DISTRIBUICAO DE ALIME",
@@ -53,24 +52,37 @@ root = tree.getroot()
 for elem in root.iter():
     elem.tag = elem.tag.split('}', 1)[1] if '}' in elem.tag else elem.tag
 
+st.markdown("---")  # Divider
 # Input fields for CNPJ
 seller_cnpj = st.text_input("Seller CNPJ", value="45.163.750/0001-12")
 buyer_cnpj = st.text_input("Buyer CNPJ", value="30.998.254/0082-77")
 
 st.markdown("---")  # Divider
 
+# Input fields for Buyer Address
+buyer_address = {
+    "Street": st.text_input("Street", value="JOAQUIM FLORIANO 100"),
+    "Number": st.text_input("Number", value="100"),
+    "Neighborhood": st.text_input("Neighborhood", value="CENTRO"),
+    "Municipality": st.text_input("Municipality", value="3550308"),
+    "City": st.text_input("City", value="SAO PAULO"),
+    "State": st.text_input("State", value="SP"),
+    "CEP": st.text_input("CEP", value="04534000"),
+    "Country Code": st.text_input("Country Code", value="1058"),
+    "Country": st.text_input("Country", value="BRASIL")
+}
+
+st.markdown("---")  # Divider
+
 # Input fields for installments
-num_installments = st.number_input(
-    "Number of Installments", min_value=1, step=1)
+num_installments = st.number_input("Number of Installments", min_value=1, step=1)
 installment_details = []
 
 default_due_date = datetime.now() + timedelta(days=7)
 for i in range(num_installments):
     st.write(f"Installment {i + 1}")
-    amount = st.number_input(
-        f"Installment Amount {i + 1}", min_value=0.0, step=0.01, value=100.0, key=f"amount_{i}")
-    due_date = st.date_input(
-        f"Due Date {i + 1}", value=default_due_date + timedelta(days=7 * i), key=f"date_{i}")
+    amount = st.number_input(f"Installment Amount {i + 1}", min_value=0.0, step=0.01, value=100.0, key=f"amount_{i}")
+    due_date = st.date_input(f"Due Date {i + 1}", value=default_due_date + timedelta(days=7 * i), key=f"date_{i}")
     installment_details.append((amount, due_date))
 
 st.markdown("---")  # Divider
@@ -83,6 +95,17 @@ if st.button("Generate Nota Fiscal"):
     # Update XML fields
     root.find('.//emit/CNPJ').text = seller_cnpj_clean
     root.find('.//dest/CNPJ').text = buyer_cnpj_clean
+
+    # Update buyer address fields
+    root.find('.//enderDest/xLgr').text = buyer_address["Street"]
+    root.find('.//enderDest/nro').text = buyer_address["Number"]
+    root.find('.//enderDest/xBairro').text = buyer_address["Neighborhood"]
+    root.find('.//enderDest/cMun').text = buyer_address["Municipality"]
+    root.find('.//enderDest/xMun').text = buyer_address["City"]
+    root.find('.//enderDest/UF').text = buyer_address["State"]
+    root.find('.//enderDest/CEP').text = buyer_address["CEP"]
+    root.find('.//enderDest/cPais').text = buyer_address["Country Code"]
+    root.find('.//enderDest/xPais').text = buyer_address["Country"]
 
     # Clear existing installments
     for dup in root.findall('.//dup'):

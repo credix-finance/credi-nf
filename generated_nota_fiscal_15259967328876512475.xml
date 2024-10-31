@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='utf-8'?>
+<nfeProc versao="4.00">
+	<NFe>
+		<infNFe Id="NFe00000000000000000000000008964823625145470104" versao="4.00">
+			<ide>
+				<cUF>35</cUF>
+				<cNF>26963870</cNF>
+				<natOp>REVENDA MERCADORIA</natOp>
+				<mod>55</mod>
+				<serie>1</serie>
+				<nNF>372221</nNF>
+				<dhEmi>2024-10-31T19:41:09-03:00</dhEmi>
+				<dhSaiEnt>2024-10-31T19:41:09-03:00</dhSaiEnt>
+				<tpNF>1</tpNF>
+				<idDest>1</idDest>
+				<cMunFG>3537800</cMunFG>
+				<tpImp>1</tpImp>
+				<tpEmis>1</tpEmis>
+				<cDV>0</cDV>
+				<tpAmb>1</tpAmb>
+				<finNFe>1</finNFe>
+				<indFinal>0</indFinal>
+				<indPres>9</indPres>
+				<indIntermed>0</indIntermed>
+				<procEmi>0</procEmi>
+				<verProc>12.1.033 | 3.0</verProc>
+			</ide>
+			<emit>
+				<CNPJ>45163750000112</CNPJ>
+				<xNome>FAKECO</xNome>
+				<xFant>FAKECO COMERCIO E DISTRIBUICAO DE ALIME</xFant>
+				<enderEmit>
+					<xLgr>VIA RAIMUNDO ANTUNES SOARES</xLgr>
+					<nro>1500</nro>
+					<xCpl>SETOR A</xCpl>
+					<xBairro>FERRAZ</xBairro>
+					<cMun>3537800</cMun>
+					<xMun>PIEDADE</xMun>
+					<UF>SP</UF>
+					<CEP>18170000</CEP>
+					<cPais>1058</cPais>
+					<xPais>BRASIL</xPais>
+					<fone>1175601374</fone>
+				</enderEmit>
+				<IE>526123920117</IE>
+				<CRT>3</CRT>
+			</emit>
+			<dest>
+				<CNPJ>30998254008277</CNPJ>
+				<xNome>FAKE TECNOLOGIA LTDA</xNome>
+				<enderDest>
+					<xLgr>JOAQUIM FLORIANO 100</xLgr>
+					<nro>100</nro>
+					<xCpl>maxim@credix.finance</xCpl>
+					<xBairro>CENTRO</xBairro>
+					<cMun>3550308</cMun>
+					<xMun>Antwerp</xMun>
+					<UF>Antwerp</UF>
+					<CEP>04534000</CEP>
+					<cPais>1058</cPais>
+					<xPais>Belgium</xPais>
+				</enderDest>
+				<indIEDest>2</indIEDest>
+				<email>fake@credix.finance</email>
+			</dest>
+			<det nItem="1">
+				<prod>
+					<cProd>277</cProd>
+					<cEAN>SEM GTIN</cEAN>
+					<xProd>UVA VERDE SEM SEMENTE</xProd>
+					<NCM>08061000</NCM>
+					<cBenef />
+					<CFOP>5102</CFOP>
+					<uCom>UN</uCom>
+					<qCom>2.0000</qCom>
+					<vUnCom>10.88500000</vUnCom>
+					<vProd>100.00</vProd>
+					<cEANTrib>SEM GTIN</cEANTrib>
+					<uTrib>UN</uTrib>
+					<qTrib>2.0000</qTrib>
+					<vUnTrib>10.88500000</vUnTrib>
+					<vFrete>2.22</vFrete>
+					<indTot>1</indTot>
+				</prod>
+				<imposto>
+					<ICMS>
+						<ICMS40>
+							<orig>0</orig>
+							<CST>40</CST>
+						</ICMS40>
+					</ICMS>
+					<IPI>
+						<cEnq>999</cEnq>
+						<IPINT>
+							<CST>53</CST>
+						</IPINT>
+					</IPI>
+					<PIS>
+						<PISNT>
+							<CST>06</CST>
+						</PISNT>
+					</PIS>
+					<COFINS>
+						<COFINSNT>
+							<CST>06</CST>
+						</COFINSNT>
+					</COFINS>
+				</imposto>
+			</det>
+			<det nItem="2">
+				<prod>
+					<cProd>112</cProd>
+					<cEAN>SEM GTIN</cEAN>
+					<xProd>BANANA PRATA</xProd>
+					<NCM>08039000</NCM>
+					<cBenef />
+					<CFOP>5102</CFOP>
+					<uCom>KG</uCom>
+					<qCom>2.0000</qCom>
+					<vUnCom>7.57000000</vUnCom>
+					<vProd>15.14</vProd>
+					<cEANTrib>SEM GTIN</cEANTrib>
+					<uTrib>KG</uTrib>
+					<qTrib>2.0000</qTrib>
+					<vUnTrib>7.57000000</vUnTrib>
+					<vFrete>1.54</vFrete>
+					<indTot>1</indTot>
+				</prod>
+				<imposto>
+					<ICMS>
+						<ICMS40>
+							<orig>0</orig>
+							<CST>40</CST>
+						</ICMS40>
+					</ICMS>
+					<IPI>
+						<cEnq>999</cEnq>
+						<IPINT>
+							<CST>53</CST>
+						</IPINT>
+					</IPI>
+					<PIS>
+						<PISNT>
+							<CST>06</CST>
+						</PISNT>
+					</PIS>
+					<COFINS>
+						<COFINSNT>
+							<CST>06</CST>
+						</COFINSNT>
+					</COFINS>
+				</imposto>
+			</det>
+			<det nItem="3">
+				<prod>
+					<cProd>94</cProd>
+					<cEAN>SEM GTIN</cEAN>
+					<xProd>MORANGO</xProd>
+					<NCM>08101000</NCM>
+					<cBenef />
+					<CFOP>5102</CFOP>
+					<uCom>UN</uCom>
+					<qCom>2.0000</qCom>
+					<vUnCom>10.41000000</vUnCom>
+					<vProd>20.82</vProd>
+					<cEANTrib>SEM GTIN</cEANTrib>
+					<uTrib>UN</uTrib>
+					<qTrib>2.0000</qTrib>
+					<vUnTrib>10.41000000</vUnTrib>
+					<vFrete>2.12</vFrete>
+					<indTot>1</indTot>
+				</prod>
+				<imposto>
+					<ICMS>
+						<ICMS40>
+							<orig>0</orig>
+							<CST>40</CST>
+						</ICMS40>
+					</ICMS>
+					<IPI>
+						<cEnq>999</cEnq>
+						<IPINT>
+							<CST>53</CST>
+						</IPINT>
+					</IPI>
+					<PIS>
+						<PISNT>
+							<CST>06</CST>
+						</PISNT>
+					</PIS>
+					<COFINS>
+						<COFINSNT>
+							<CST>06</CST>
+						</COFINSNT>
+					</COFINS>
+				</imposto>
+			</det>
+			<det nItem="4">
+				<prod>
+					<cProd>38</cProd>
+					<cEAN>SEM GTIN</cEAN>
+					<xProd>PERA PORTUGUESA</xProd>
+					<NCM>08083000</NCM>
+					<cBenef />
+					<CFOP>5102</CFOP>
+					<uCom>KG</uCom>
+					<qCom>1.0000</qCom>
+					<vUnCom>17.81000000</vUnCom>
+					<vProd>17.81</vProd>
+					<cEANTrib>SEM GTIN</cEANTrib>
+					<uTrib>KG</uTrib>
+					<qTrib>1.0000</qTrib>
+					<vUnTrib>17.81000000</vUnTrib>
+					<vFrete>1.82</vFrete>
+					<indTot>1</indTot>
+				</prod>
+				<imposto>
+					<ICMS>
+						<ICMS40>
+							<orig>0</orig>
+							<CST>40</CST>
+						</ICMS40>
+					</ICMS>
+					<IPI>
+						<cEnq>999</cEnq>
+						<IPINT>
+							<CST>53</CST>
+						</IPINT>
+					</IPI>
+					<PIS>
+						<PISNT>
+							<CST>06</CST>
+						</PISNT>
+					</PIS>
+					<COFINS>
+						<COFINSNT>
+							<CST>06</CST>
+						</COFINSNT>
+					</COFINS>
+				</imposto>
+			</det>
+			<total>
+				<ICMSTot>
+					<vBC>100.00</vBC>
+					<vICMS>0</vICMS>
+					<vICMSDeson>0</vICMSDeson>
+					<vFCPUFDest>0</vFCPUFDest>
+					<vICMSUFDest>0</vICMSUFDest>
+					<vICMSUFRemet>0</vICMSUFRemet>
+					<vFCP>0</vFCP>
+					<vBCST>0</vBCST>
+					<vST>0</vST>
+					<vFCPST>0</vFCPST>
+					<vFCPSTRet>0</vFCPSTRet>
+					<vProd>75.54</vProd>
+					<vFrete>7.70</vFrete>
+					<vSeg>0</vSeg>
+					<vDesc>0</vDesc>
+					<vII>0</vII>
+					<vIPI>0</vIPI>
+					<vIPIDevol>0</vIPIDevol>
+					<vPIS>0</vPIS>
+					<vCOFINS>0</vCOFINS>
+					<vOutro>0</vOutro>
+					<vNF>100.00</vNF>
+				</ICMSTot>
+			</total>
+			<transp>
+				<modFrete>1</modFrete>
+			</transp>
+			<cobr>
+				<fat>
+					<nFat>1000372221</nFat>
+					<vOrig>100.00</vOrig>
+					<vDesc>0</vDesc>
+					<vLiq>100.00</vLiq>
+				</fat>
+				<dup><nDup>001</nDup><dVenc>2024-11-07</dVenc><vDup>100.00</vDup></dup></cobr>
+			<pag>
+				<detPag>
+					<indPag>0</indPag>
+					<tPag>15</tPag>
+					<vPag>100.00</vPag>
+				</detPag>
+			</pag>
+			<infAdic>
+				<infCpl>NrIntPed=323330</infCpl>
+			</infAdic>
+			<infRespTec>
+				<CNPJ>53113791000122</CNPJ>
+				<xContato>João da Silva</xContato>
+				<email>tech_support@fakecompany.com</email>
+				<fone>1128593904</fone>
+			</infRespTec>
+		</infNFe>
+		<Signature>
+			<SignedInfo>
+				<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+				<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+				<Reference URI="#NFe35550553935782000100550010003722211223238111">
+					<Transforms>
+						<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+						<Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+					</Transforms>
+					<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+					<DigestValue>LfjUGTKjDKWgPh3KkxOlrGlQVHE=</DigestValue>
+				</Reference>
+			</SignedInfo>
+			<SignatureValue>gqDf5OCgtom1Ci2M2gtsYPDu4gEY1lH0BcHW0SlcjudD1ACrXc5/wOH6+VxczuOO+SRkSlIAbKl12UPwkW5oWzTzonPPUwpxVDe5ocQon/EqW9m/IWkI18aXl0QWOwI/rBc0aViN2sDrKsHmbTsjOZ2dJXlmT3YFY7B9k8SGUK7kjg4ThabJE35WCoD1G2P6TVm2drBiVA7qs02Q6RCJWKowj7doi8RkyoI03Tf+Zj7qxX6c2tHBg2JM8X4pG68rzS3/fxHF9heYNJB/tllqSHLo+Xax9katEoOQXj9A8yzlGH0yCyaLxjXMDUBcmBL73uEVXgpCZcwTYec4YcvjYA==</SignatureValue>
+			<KeyInfo>
+				<X509Data>
+					<X509Certificate>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</X509Certificate>
+				</X509Data>
+			</KeyInfo>
+		</Signature>
+	</NFe>
+	<protNFe versao="4.00">
+		<infProt>
+			<tpAmb>1</tpAmb>
+			<verAplic>SP_NFE_PL009_V4</verAplic>
+			<chNFe>35240133935782000100550010003722211269638700</chNFe>
+			<dhRecbto>2024-10-31T19:41:09-03:00</dhRecbto>
+			<nProt>135240206821068</nProt>
+			<digVal>LfjUGTKjDKWgPh3KkxOlrGlQVHE=</digVal>
+			<cStat>100</cStat>
+			<xMotivo>Autorizado o uso da NF-e</xMotivo>
+		</infProt>
+	</protNFe>
+</nfeProc>

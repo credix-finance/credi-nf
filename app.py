@@ -54,8 +54,8 @@ for elem in root.iter():
 
 st.markdown("---")  # Divider
 # Input fields for CNPJ
-seller_cnpj = st.text_input("Seller CNPJ", value="45.163.750/0001-12")
-buyer_cnpj = st.text_input("Buyer CNPJ", value="30.998.254/0082-77")
+seller_cnpj = st.text_input("Seller CNPJ", value="30.792.427/0001-30")
+buyer_cnpj = st.text_input("Buyer CNPJ", value="30.998.254/0033-99")
 
 st.markdown("---")  # Divider
 

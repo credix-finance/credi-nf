@@ -54,8 +54,8 @@ for elem in root.iter():
 
 st.markdown("---")  # Divider
 # Input fields for CNPJ
-seller_cnpj = st.text_input("Seller CNPJ", value="30.792.427/0001-30")
-buyer_cnpj = st.text_input("Buyer CNPJ", value="30.998.254/0033-99")
+seller_cnpj = st.text_input("Seller CNPJ", value="51.137.104/0001-83")
+buyer_cnpj = st.text_input("Buyer CNPJ", value="45.163.750/0001-12")
 
 st.markdown("---")  # Divider
 
@@ -75,14 +75,14 @@ buyer_address = {
 st.markdown("---")  # Divider
 
 # Input fields for installments
-num_installments = st.number_input("Number of Installments", min_value=1, step=1)
+num_installments = st.number_input("Number of Installments", min_value=1, step=1, value=3)
 installment_details = []
 
-default_due_date = datetime.now() + timedelta(days=7)
+default_due_date = datetime.now() + timedelta(days=30)
 for i in range(num_installments):
     st.write(f"Installment {i + 1}")
     amount = st.number_input(f"Installment Amount {i + 1}", min_value=0.0, step=0.01, value=100.0, key=f"amount_{i}")
-    due_date = st.date_input(f"Due Date {i + 1}", value=default_due_date + timedelta(days=7 * i), key=f"date_{i}")
+    due_date = st.date_input(f"Due Date {i + 1}", value=default_due_date + timedelta(days=30 * i), key=f"date_{i}")
     installment_details.append((amount, due_date))
 
 st.markdown("---")  # Divider
